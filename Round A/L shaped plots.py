@@ -1,5 +1,16 @@
+# Google Kick Start 2021 Round A - L Shaped Plots
+# https://codingcompetitions.withgoogle.com/kickstart/round/0000000000436140/000000000068c509
+
+# Referred : https://github.com/absansher/KickStart-2021-A/blob/main/2%20(L%20Shaped%20Plots)%20.py
+# Time:  O(R * C)
+# Space: O(min(R, C))
+
+# Count(x,y)=min(x2,y)+min(y2,x)−2
 def count(x, y):
     return max(min(x//2 - 1, y-1) + min(x - 1, y//2-1), 0)
+# From Analysis:
+# If we can calculate number of consecutive cells that have value 1 in each side of (i,j), 
+# we can calculate number of L-shapes of each type with this cell as the common endpoint of the segments using the Count() function above.
 
 # def compute_lshape():
 for case in range(1,int(input())+1):
