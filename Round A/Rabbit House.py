@@ -1,6 +1,7 @@
 # Google Kick Start 2021 Round A - Rabbit House
 # https://codingcompetitions.withgoogle.com/kickstart/round/0000000000436140/000000000068cb14
 # Referred: https://docs.python.org/3/library/heapq.html 
+# https://github.com/absansher/KickStart-2021-A/blob/main/3%20(Rabbit%20House)%20.py
 
 # Time: O(R*C*log(R*C))
 # Space: O(R*C)
