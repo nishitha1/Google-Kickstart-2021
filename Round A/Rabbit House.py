@@ -1,6 +1,14 @@
+# Google Kick Start 2021 Round A - Rabbit House
+# https://codingcompetitions.withgoogle.com/kickstart/round/0000000000436140/000000000068cb14
+# Referred: https://docs.python.org/3/library/heapq.html 
+
+# Time: O(R*C*log(R*C))
+# Space: O(R*C)
+
 # 2D grid with r rows, c columns
-# abs(h[i] - h[i+1]) <= 1
+# e.g. abs(h[i][j] - h[i+1][j]) <= 1
 # can only increase height
+
 from heapq import *
 import itertools
 
@@ -52,10 +60,4 @@ for case in range(1, int(input()) + 1):
         found += 1
         
     s = sum(modified[i][j] - grid[i][j] for i in range(r) for j in range(c))
-    print('Case #',case,': ',s,sep='')
-    
-    
-    
-# t = int(input())
-# for i in range(t):
-#     print("Case #{}:{}".format(i+1, compute()))
+    print("Case #{}:{}".format(case, s))
