@@ -1,8 +1,10 @@
+# Google Kick Start 2021 Round B - Consecutive Primes
+# https://codingcompetitions.withgoogle.com/kickstart/round/0000000000435a5b/000000000077a8e6
+
 # input: a number
 # output: largest number less than or equal to Z 
 # that is the product of two consecutive prime numbers
-# given a number: find the factors then -> prime number
-# 15 = 3 * 5, 35 = 5*7, 
+
 import math
 
 def check_prime(n):
