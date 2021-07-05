@@ -28,6 +28,7 @@ def find_prime(n):
         if check_prime(i):
             small = i
             break
+    
     # smallest prime greater than √n 
     big = 0
     for i in range(x, n):
@@ -44,8 +45,5 @@ def find_prime(n):
     return None
     
 for i in range(int(input())):
-    print("Case #{}:{}".format(i+1,find_prime(int(input()))))
-##    print("Case #"+str(i+1), end=": ")
-##    print(find_prime(int(input())))
-    
-        
+   print("Case #"+str(i+1), end=": ")
+   print(find_prime(int(input())))
