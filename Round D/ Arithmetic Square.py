@@ -1,3 +1,8 @@
+
+# Google Kick Start 2021 Round D - Arithmetic Square
+# https://codingcompetitions.withgoogle.com/kickstart/round/00000000004361e3/000000000082b813
+# Time: O(1)
+
 def valcheck(g0, g1, g2, valg):
     s = 0
     g1[1] = valg
